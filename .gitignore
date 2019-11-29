@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# csv files
+# output files
 *.csv
+*.txt
