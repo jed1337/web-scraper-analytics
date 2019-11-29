@@ -1,10 +1,12 @@
 import csv
+import pandas as pd
 
-def getTopFivePerYear():
-	with open('2014-2018.csv', encoding="utf8") as csvfile:
+def question2():
+		csvfile = pd.read_csv("consolidated.csv")
 		extractedObj = []
-		next(csvfile)
+		# next(csvfile)
 		readCSV = csv.reader(csvfile, delimiter=',')
+		next(readCSV)
 		for row in readCSV:
 			artistSong=(row[3]).split(' - ')
 			extractedObj.append({

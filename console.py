@@ -1,12 +1,16 @@
-import MusicDataExtraction as mde
-import Questions as q
+import question1 as q1
+import question2 as q2
+import question5 as q5
+import question6 as q6
+import question7 as q7
+import question8 as q8
 import writer as w
 
 def header():
     print("***** Python Query Tool *****")
     print("\n")
 
-    print("[1] Which artists&songs have been included in Top 10 from 2014-2018 every 25 December?\n")
+    print("[1] Which artists&songs have been included in Top 5 from 2014-2018 every 25 December?\n")
     print("[2] Which artist&song have the highest points from 2014 - 2018 every 25th of December?\n")
     print("[3] From 2014 - 2018 every 25th of December, what are the accumulated total points of Top 10 songs/singers?\n")
     print("[4] What are the Top 10 artists&songs that were recognized by top countries of music industry (US, UK, DE, AU, JP)?\n")
@@ -17,44 +21,28 @@ def header():
     
 def choice(inputValue):
     if (inputValue == '1'):
-        q1 = q.Question1(mde.extract())
-        q1.quickAnswer()
-        saveFile(q1.outputdata())
+        q1.question1()
         
     elif (inputValue == '2'):
-        q2 = q.Question2(mde.extract())
-        q2.quickAnswer()
-        saveFile(q2.outputdata())
+        q2.question2()
 
     elif (inputValue == '3'):
-        q3 = q.Question3(mde.extract())
-        q3.quickAnswer()
-        saveFile(q3.outputdata())
+        print('Not implemented')
 
     elif (inputValue == '4'):
-        q4 = q.Question4(mde.extract())
-        q4.quickAnswer()
-        saveFile(q4.outputdata())
+        print('Not implemented')
 
     elif (inputValue == '5'):
-        q5 = q.Question5(mde.extract())
-        q5.quickAnswer()
-        saveFile(q5.outputdata())
+        q5.question5()
 
     elif (inputValue == '6'):
-        q6 = q.Question6(mde.extract())
-        q6.quickAnswer()
-        saveFile(q6.outputdata())
+        q6.question6()
 
     elif (inputValue == '7'):
-        q7 = q.Question7(mde.extract())
-        q7.quickAnswer()
-        saveFile(q7.outputdata())
+        q7.question7()
 
     elif (inputValue == '8'):
-        q8 = q.Question8(mde.extract())
-        q8.quickAnswer()
-        saveFile(q8.outputdata())
+        q8.question8()
 
     else: 
         print("Incorrect choice!")

@@ -19,7 +19,7 @@ def scrape(url, i):
         rename_col_zero(o_csv, u_csv, i)
         remove_first_row(u_csv, e_csv)
         merge_files()
-        remove_first_row('consolidated_1.csv', 'consilidated.csv')
+        remove_first_row('consolidated_1.csv', 'consolidated.csv')
         
 def remove_x_row(i_csv, o_csv):
         row_count = 0
@@ -77,5 +77,4 @@ def extract():
            
         delete_other_csv()
 
-
-extract()   
+extract()
