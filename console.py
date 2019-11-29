@@ -9,9 +9,9 @@ def header():
     print("From 2014 - 2018 every 25th of December, what are the accumulated total points of Top 10 songs/singers?")
     print("What are the Top 10 artists&songs that were recognized by top countries of music industry (US, UK, DE, AU, JP)?")
     print("Which songs&singers belong to the lowest 10 from 2014 - 2018 25th of December?")
-    print("From 2014 - 2018 25th of December, how many times have Mariah Carey belonged to Top 5?")
-    print("[7] Sample")
-    print("[8] Sample")
+    print("From 2014 - 2018 25th of December, how many times did Mariah Carey belonged to Top 5?")
+    print("Which artist&song have the lowest points from 2014 - 2018 every 25th of December?")
+    print("From 2014 - 2018 25th of December, what artists&songs garnered the highest total points(TPTs) per year?")
 
 def choice(inputValue):
     if (inputValue == '1'):
