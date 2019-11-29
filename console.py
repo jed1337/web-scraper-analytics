@@ -1,4 +1,5 @@
-import ExtractMusicData as em
+import MusicDataExtraction as mde
+import Questions as q
 import writer as w
 
 def header():
@@ -15,36 +16,44 @@ def header():
 
 def choice(inputValue):
     if (inputValue == '1'):
-        em.question1.quickAnswer()
-        saveFile(em.question1.outputdata())
-
+        q1 = q.Question1(mde.extract())
+        q1.quickAnswer()
+        saveFile(q1.outputdata())
+        
     elif (inputValue == '2'):
-        em.question2.quickAnswer()
-        saveFile(em.question2.outputdata())
+        q2 = q.Question2(mde.extract())
+        q2.quickAnswer()
+        saveFile(q2.outputdata())
 
     elif (inputValue == '3'):
-        em.question3.quickAnswer()
-        saveFile(em.question3.outputdata())
+        q3 = q.Question3(mde.extract())
+        q3.quickAnswer()
+        saveFile(q3.outputdata())
 
     elif (inputValue == '4'):
-        em.question4.quickAnswer()
-        saveFile(em.question4.outputdata())
+        q4 = q.Question4(mde.extract())
+        q4.quickAnswer()
+        saveFile(q4.outputdata())
 
     elif (inputValue == '5'):
-        em.question5.quickAnswer()
-        saveFile(em.question5.outputdata())
+        q5 = q.Question5(mde.extract())
+        q5.quickAnswer()
+        saveFile(q5.outputdata())
 
     elif (inputValue == '6'):
-        em.question6.quickAnswer()
-        saveFile(em.question6.outputdata())
+        q6 = q.Question6(mde.extract())
+        q6.quickAnswer()
+        saveFile(q6.outputdata())
 
     elif (inputValue == '7'):
-        em.question7.quickAnswer()
-        saveFile(em.question7.outputdata())
+        q7 = q.Question7(mde.extract())
+        q7.quickAnswer()
+        saveFile(q7.outputdata())
 
     elif (inputValue == '8'):
-        em.question8.quickAnswer()
-        saveFile(em.question8.outputdata())
+        q8 = q.Question8(mde.extract())
+        q8.quickAnswer()
+        saveFile(q8.outputdata())
 
     else: 
         print("Incorrect choice!")
