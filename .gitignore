@@ -131,3 +131,8 @@ dmypy.json
 # output files
 *.csv
 *.txt
+*.xlsx
+
+# include dependencies.txt
+!dependencies.txt
+!output/outputGoesHere.txt

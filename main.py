@@ -1,4 +1,4 @@
-from writer import csv_writer, txt_writer
+from writer import csv_writer, txt_writer, excel_writer
 
 nested_array = [
     ['emp_name', 'dept', 'birth_month'],
@@ -9,3 +9,4 @@ nested_array = [
 
 csv_writer(nested_array)
 txt_writer(nested_array)
+excel_writer(nested_array)
