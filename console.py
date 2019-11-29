@@ -3,17 +3,18 @@ import Questions as q
 import writer as w
 
 def header():
-    print("Python Query Tool")
+    print("***** Python Query Tool *****")
+    print("\n")
 
-    print("Which artists&songs have been included in Top 10 from 2014-2018 every 25 December?")
-    print("Which artist&song have the highest points from 2014 - 2018 every 25th of December?")
-    print("From 2014 - 2018 every 25th of December, what are the accumulated total points of Top 10 songs/singers?")
-    print("What are the Top 10 artists&songs that were recognized by top countries of music industry (US, UK, DE, AU, JP)?")
-    print("Which songs&singers belong to the lowest 10 from 2014 - 2018 25th of December?")
-    print("From 2014 - 2018 25th of December, how many times did Mariah Carey belonged to Top 5?")
-    print("Which artist&song have the lowest points from 2014 - 2018 every 25th of December?")
-    print("From 2014 - 2018 25th of December, what artists&songs garnered the highest total points(TPTs) per year?")
-
+    print("[1] Which artists&songs have been included in Top 10 from 2014-2018 every 25 December?\n")
+    print("[2] Which artist&song have the highest points from 2014 - 2018 every 25th of December?\n")
+    print("[3] From 2014 - 2018 every 25th of December, what are the accumulated total points of Top 10 songs/singers?\n")
+    print("[4] What are the Top 10 artists&songs that were recognized by top countries of music industry (US, UK, DE, AU, JP)?\n")
+    print("[5] Which songs&singers belong to the lowest 10 from 2014 - 2018 25th of December?\n")
+    print("[6] From 2014 - 2018 25th of December, how many times did Mariah Carey belonged to Top 5?\n")
+    print("[7] Which artist&song have the lowest points from 2014 - 2018 every 25th of December?\n")
+    print("[8] From 2014 - 2018 25th of December, what artists&songs garnered the highest total points(TPTs) per year?\n")
+    
 def choice(inputValue):
     if (inputValue == '1'):
         q1 = q.Question1(mde.extract())

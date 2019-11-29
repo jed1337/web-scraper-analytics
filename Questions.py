@@ -1,8 +1,8 @@
-class Question1():
+class Question1:
     def __init__(self, csv):
         self.csv = csv
     
     def quickAnswer(self):
-        pass
+        return "answ"
     def outputdata(self):
-        pass
+        return "output"
